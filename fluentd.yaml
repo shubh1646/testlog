@@ -1,0 +1,15 @@
+aggregator:
+  configMap: elasticsearch-output
+  extraEnv:
+  - name: ELASTICSEARCH_HOST
+    value: elasticsearch-elasticsearch-coordinating-only.logging.svc.cluster.local # replace this
+  - name: ELASTICSEARCH_PORT
+    value: "9200"
+
+forwarder:
+  configMap: apache-log-parser
+  extraEnv:
+  - name: FLUENTD_DAEMON_USER
+    value: root
+  - name: FLUENTD_DAEMON_GROUP
+    value: root

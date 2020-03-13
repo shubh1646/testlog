@@ -1,0 +1,6 @@
+dependencies:
+- name: elasticsearch
+  repository: https://charts.bitnami.com/bitnami
+  version: 11.0.11
+digest: sha256:43f254a83702101977635338ca467eaf03946fee91fe622803e13f86904844f9
+generated: "2020-03-12T14:11:07.828359-04:00"

@@ -1,0 +1,12 @@
+kibana:
+    elasticsearch:
+        hosts:
+        - elasticsearch-elasticsearch-coordinating-only.logging.svc.cluster.local
+        port: 9200
+        enabled: false
+        
+    metrics:
+        enabled: true
+       
+    service:
+        type: LoadBalancer

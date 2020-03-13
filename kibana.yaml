@@ -1,0 +1,10 @@
+elasticsearch:
+    hosts:
+    - elastic-elasticsearch-coordinating-only.logging.svc.cluster.local # replace this
+    port: 9200
+  
+metrics:
+    enabled: true
+  
+service:
+    type: LoadBalancer
